@@ -1,0 +1,129 @@
+
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+/* Selector de fecha */
+.datepicker {
+    width: 156px;
+    position: relative;
+}
+
+/* Campo de fecha */
+.campo-fecha {
+    display: flex;
+    width: 156px;
+    height: 27px;
+    border: 1px solid #555555;
+}
+
+.campo-fecha input {
+    width: 126px;
+    min-width: 0;
+    padding: 4px 8px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+}
+
+.campo-fecha input::placeholder {
+    color: #333333;
+}
+
+.campo-fecha button {
+    width: 29px;
+    padding: 0;
+    border: none;
+    border-left: 1px solid #555555;
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+
+.icono-calendario {
+    font-size: 20px;
+    color: #222222;
+}
+
+/* Calendario */
+.calendario {
+    position: absolute;
+    top: 27px;
+    left: 0;
+    width: 156px;
+    border: 1px solid #555555;
+    background-color: white;
+}
+
+/* Encabezado del calendario */
+.encabezado-calendario {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 42px;
+    padding: 0 5px;
+    border-bottom: 1px solid #777777;
+}
+
+.encabezado-calendario h2 {
+    margin: 0;
+    font-size: 10px;
+    font-weight: normal;
+}
+
+.encabezado-calendario button {
+    padding: 3px;
+    border: none;
+    background: none;
+    font-size: 11px;
+    cursor: pointer;
+}
+
+/* Tabla de los días */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th {
+    height: 22px;
+    font-size: 10px;
+    font-weight: normal;
+    border-bottom: 1px solid #aaaaaa;
+}
+
+td {
+    height: 27px;
+    padding: 0;
+    border: 1px solid #dddddd;
+    text-align: center;
+    font-size: 11px;
+}
+
+/* Efecto visual al pasar el cursor */
+td:hover {
+    background-color: #eeeeee;
+}
+
+/* Adaptación a pantallas pequeñas */
+@media (max-width: 400px) {
+    .contenedor {
+        padding-top: 60px;
+    }
+}
